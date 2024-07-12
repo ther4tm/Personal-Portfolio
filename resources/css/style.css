@@ -1,0 +1,227 @@
+/* colour palette
+#F8E9A1 Yellow gold
+#F76C6C Coral
+#A8D0E6 Light blue
+#374785 Indigo blue
+#24305E Dark blue
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#index {
+    background-color: #F76C6C;
+}
+
+#designs {
+    background-color: #374785;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#content {
+    display: flex;
+    min-height: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+p {
+    color: white;
+    font-weight: 300;
+}
+
+hr {
+    color: white;
+    background-color: white;
+    width: 25%;
+    margin: 0 auto;
+    height: .025rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Design container styling */
+.design_container {
+    margin: 2%;
+    width: auto;
+    max-height: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.design_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 1%;
+}
+
+.design_left h2, .design_left p {
+    margin-left: 1rem;
+}
+
+.design_right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_container {
+    height: 100%;
+    width: 100%;
+}
+
+.design_right img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.overlay_title {
+    display: none;
+}
+
+/* Footer and form styling */
+footer {
+    padding: 1rem;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#labels {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 1 1 40%;
+}
+
+#inputs {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 1 1 60%;
+}
+
+label, input, textarea {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+footer form {
+    display: none;
+}
+
+footer p {
+    display: none;
+    text-align: center;
+}
+
+footer label {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+#submit_button {
+    color: #374785;
+}
+
+
+/* Small screen size rules */
+@media only screen and (max-width: 480px) {
+
+    /* Design container styling */
+    .design_container {
+        margin: 5%;
+        max-height: 30rem;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .design_left {
+        display: none;
+    }
+
+    .design_right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .design_container h2, p {
+        display: none;
+    }
+
+    .overlay_title {
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        background-color: #00000099;
+      }
+
+    /* Footer and form styling */
+
+    #labels {
+        display: none;
+    }
+
+}

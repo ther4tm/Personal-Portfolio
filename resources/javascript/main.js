@@ -6,8 +6,10 @@ let navLink = document.getElementById('nav_link')
 const hoverStyle = (event) => {
     if (document.body.id === 'index') {
         event.target.style.color = '#374785';
+        event.target.style.cursor = 'pointer';
     } else {
         event.target.style.color = '#F76C6C';
+        event.target.style.cursor = 'pointer';
     };
 };
 

@@ -52,10 +52,14 @@ a {
 .brands {
     color: white;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .brands i {
     color: white;
+    padding-bottom: 0.5rem;
 }
 
 h1 {

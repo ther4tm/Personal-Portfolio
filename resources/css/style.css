@@ -44,6 +44,15 @@ a {
     padding: 1rem;
 }
 
+#brand-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.brands {
+    padding: 1rem;
+}
+
 h1 {
     color: white;
     font-size: 3rem;

@@ -59,6 +59,7 @@ a {
 }
 
 .brands i {
+    height: 2rem;
     color: white;
     padding-bottom: 0.5rem;
 }

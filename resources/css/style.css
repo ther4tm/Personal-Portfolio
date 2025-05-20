@@ -44,6 +44,11 @@ a {
     padding: 1rem;
 }
 
+#statement {
+    text-align: center;
+    padding: 1rem;
+}
+
 #brand-logos {
     display: flex;
     justify-content: center;
